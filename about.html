@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ana Belén Yánez Suárez</title>
+  <meta name="description" content="Learn more about Ana Belén Yánez Suárez, Marine Biologist & National Geographic Explorer">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="dist/css/output.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased">
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- Header -->
+  <header class="fixed w-full p-4 bg-white bg-opacity-90 backdrop-blur-sm z-40">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold">Ana Belén</a>
+      <button id="nav-toggle" class="md:hidden text-gray-800 text-xl">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="nav-menu" class="hidden md:block">
+        <ul class="md:flex space-y-4 md:space-y-0 md:space-x-6">
+          <li><a href="index.html" class="text-gray-800 hover:text-accent transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-accent font-medium">About</a></li>
+          <li><a href="research.html" class="text-gray-800 hover:text-accent transition-colors">Research</a></li>
+          <li><a href="publications.html" class="text-gray-800 hover:text-accent transition-colors">Publications</a></li>
+          <li><a href="expeditions.html" class="text-gray-800 hover:text-accent transition-colors">Expeditions</a></li>
+          <li><a href="collaborations.html" class="text-gray-800 hover:text-accent transition-colors">Collaborations</a></li>
+          <li><a href="seminars.html" class="text-gray-800 hover:text-accent transition-colors">Seminars</a></li>
+          <li><a href="skills.html" class="text-gray-800 hover:text-accent transition-colors">Skills</a></li>
+          <li><a href="contact.html" class="text-gray-800 hover:text-accent transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- About Hero -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-prose mx-auto">
+          <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h1>
+          <div class="aspect-video bg-yellow-100 rounded-lg shadow-md mb-2 overflow-hidden">
+            <img src="src/images/yellow-coral.jpg" alt="Yellow coral in the ocean" class="w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-500 text-right mb-8">Image credits: Schmidt Ocean Institute</p>
+          <p class="text-lg mb-6">
+            I'm Ana Belén Yánez Suárez — a marine biologist, National Geographic Explorer, and PhD candidate at Memorial University of New Brunswick and a former EMBRSea scholar. I study coral reef ecosystems across depths, from shallow tropical reefs in the Pacific and Caribbean to deep-sea coral communities thriving in low-oxygen waters.
+          </p>
+          <p class="text-lg mb-6">
+            My fascination with corals deepened in the Galápagos, where I contributed to the first systematic characterization of deep-sea benthic fauna on unexplored seamounts. I later led coral restoration efforts and studied coral spawning in the Caribbean, followed by research on the combined effects of warming and eutrophication on Red Sea corals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio and Gallery -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Bio Column -->
+          <div>
+            <h2 class="text-3xl font-bold mb-6">My Journey</h2>
+            <p class="mb-4">
+              My fascination with marine life began during childhood summers spent on the coast of Ecuador, where I was born and raised. The diverse ecosystems of the Galápagos Islands, just a short distance from my home, sparked my curiosity about the ocean's mysteries.
+            </p>
+            <p class="mb-4">
+              After completing my undergraduate studies in Biology at the Universidad San Francisco de Quito, I pursued graduate research at Scripps Institution of Oceanography, where I specialized in deep-sea ecology. My doctoral research on hydrothermal vent communities led to the discovery of several previously unknown species and earned recognition from the scientific community.
+            </p>
+            <p class="mb-4">
+              In 2018, I was honored to be named a National Geographic Explorer, which has allowed me to combine scientific research with storytelling to raise awareness about marine conservation issues and inspire the next generation of ocean advocates.
+            </p>
+            <p class="mb-4">
+              Today, I lead an international team of researchers focused on documenting marine biodiversity in understudied regions and developing innovative approaches to ocean conservation. Our work has been featured in leading scientific journals and media outlets worldwide.
+            </p>
+            <p class="mb-4">
+              When not in the field or laboratory, I am passionate about science communication and education. I regularly give talks at universities, conferences, and public events, sharing the wonders of the ocean and the importance of its conservation.
+            </p>
+          </div>
+          
+          <!-- Gallery Column -->
+          <div>
+            <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+              <div class="aspect-square bg-gray-200 shadow-md gallery-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="py-24 bg-gray-900 text-white relative">
+      <div class="absolute inset-0 bg-gray-900 opacity-70 z-0"></div>
+      <!-- Background image would go here -->
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <i class="fas fa-quote-left text-5xl text-accent opacity-50 mb-6"></i>
+          <blockquote class="text-2xl md:text-3xl font-light italic mb-8">
+            The ocean is the heart of our planet. It connects us all, regardless of where we live. By understanding and protecting marine ecosystems, we're safeguarding the future of all life on Earth.
+          </blockquote>
+          <p class="text-xl font-medium">— Ana Belén Yánez Suárez</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Education & Experience</h2>
+        
+        <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+          <!-- Education Column -->
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-accent">Education</h3>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">Ph.D. in Marine Biology</h4>
+              <p class="text-gray-600">Scripps Institution of Oceanography, UC San Diego</p>
+              <p class="text-gray-600">2012-2016</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">M.Sc. in Oceanography</h4>
+              <p class="text-gray-600">University of Washington</p>
+              <p class="text-gray-600">2010-2012</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">B.Sc. in Biology</h4>
+              <p class="text-gray-600">Universidad San Francisco de Quito, Ecuador</p>
+              <p class="text-gray-600">2006-2010</p>
+            </div>
+          </div>
+          
+          <!-- Experience Column -->
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-accent">Experience</h3>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">National Geographic Explorer</h4>
+              <p class="text-gray-600">National Geographic Society</p>
+              <p class="text-gray-600">2018-Present</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">Research Scientist</h4>
+              <p class="text-gray-600">Woods Hole Oceanographic Institution</p>
+              <p class="text-gray-600">2016-Present</p>
+            </div>
+            
+            <div class="mb-6">
+              <h4 class="font-bold">Visiting Researcher</h4>
+              <p class="text-gray-600">Charles Darwin Research Station, Galápagos</p>
+              <p class="text-gray-600">2014-2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Awards & Recognition</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-8">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-bold text-lg">Ocean Conservation Award</h3>
+              <p class="text-gray-600">International Marine Conservation Society, 2023</p>
+            </div>
+            <div class="mt-2 md:mt-0">
+              <i class="fas fa-award text-2xl text-accent"></i>
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-bold text-lg">Women in Science Leadership Award</h3>
+              <p class="text-gray-600">American Association for the Advancement of Science, 2022</p>
+            </div>
+            <div class="mt-2 md:mt-0">
+              <i class="fas fa-award text-2xl text-accent"></i>
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-bold text-lg">Early Career Scientist Award</h3>
+              <p class="text-gray-600">Oceanographic Society of America, 2020</p>
+            </div>
+            <div class="mt-2 md:mt-0">
+              <i class="fas fa-award text-2xl text-accent"></i>
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
+            <div>
+              <h3 class="font-bold text-lg">Outstanding Doctoral Dissertation</h3>
+              <p class="text-gray-600">Scripps Institution of Oceanography, 2016</p>
+            </div>
+            <div class="mt-2 md:mt-0">
+              <i class="fas fa-award text-2xl text-accent"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
+        <div class="mt-2">
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Terms of Use</a>
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="src/js/main.js"></script>
+</body>
+</html>

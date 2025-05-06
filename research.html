@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Ana Belén Yánez Suárez</title>
+  <meta name="description" content="Explore the marine biology research projects of Ana Belén Yánez Suárez, Marine Biologist & National Geographic Explorer">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="dist/css/output.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased">
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- Header -->
+  <header class="fixed w-full p-4 bg-white bg-opacity-90 backdrop-blur-sm z-40">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold">Ana Belén</a>
+      <button id="nav-toggle" class="md:hidden text-gray-800 text-xl">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="nav-menu" class="hidden md:block">
+        <ul class="md:flex space-y-4 md:space-y-0 md:space-x-6">
+          <li><a href="index.html" class="text-gray-800 hover:text-accent transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-gray-800 hover:text-accent transition-colors">About</a></li>
+          <li><a href="research.html" class="text-accent font-medium">Research</a></li>
+          <li><a href="publications.html" class="text-gray-800 hover:text-accent transition-colors">Publications</a></li>
+          <li><a href="expeditions.html" class="text-gray-800 hover:text-accent transition-colors">Expeditions</a></li>
+          <li><a href="collaborations.html" class="text-gray-800 hover:text-accent transition-colors">Collaborations</a></li>
+          <li><a href="seminars.html" class="text-gray-800 hover:text-accent transition-colors">Seminars</a></li>
+          <li><a href="skills.html" class="text-gray-800 hover:text-accent transition-colors">Skills</a></li>
+          <li><a href="contact.html" class="text-gray-800 hover:text-accent transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Research Hero -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-prose mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-8">Research Projects</h1>
+          <p class="text-lg mb-6">
+            My research focuses on understanding marine ecosystems and developing innovative conservation strategies. Through fieldwork, laboratory analysis, and collaborative partnerships, I explore the complexities of ocean life and work to protect endangered marine species.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Research Areas</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Research Area 1 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-water text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Deep-Sea Ecology</h3>
+            <p>Exploring and documenting biodiversity in deep-sea environments, with a focus on hydrothermal vent communities and abyssal ecosystems.</p>
+          </div>
+          
+          <!-- Research Area 2 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-temperature-high text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Climate Change Impacts</h3>
+            <p>Studying how rising ocean temperatures and acidification affect marine species, with particular attention to coral reef ecosystems.</p>
+          </div>
+          
+          <!-- Research Area 3 -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-shield-alt text-white text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Conservation Strategies</h3>
+            <p>Developing and implementing innovative approaches to marine conservation, including protected area design and community-based management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+        
+        <div class="grid grid-cols-1 gap-12">
+          <!-- Project 1 -->
+          <div class="project-card overflow-hidden" id="project-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="aspect-video bg-gray-200 rounded-lg shadow-md"></div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4">Deep-Sea Biodiversity Mapping</h3>
+                <p class="mb-4">
+                  This ongoing project aims to document and map deep-sea biodiversity in understudied regions of the Pacific Ocean. Using advanced submersible technology and environmental DNA analysis, we're creating comprehensive biodiversity inventories that inform conservation planning.
+                </p>
+                <button class="text-accent font-medium hover:underline mt-2 text-left project-details-btn" data-project="project-1-details">
+                  View Project Details <i class="fas fa-chevron-right ml-1"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Project 1 Details (Hidden by default) -->
+            <div class="hidden mt-8 bg-white p-6 rounded-lg shadow-sm" id="project-1-details">
+              <h4 class="text-xl font-bold mb-4">Project Details</h4>
+              <p class="mb-4">
+                The Deep-Sea Biodiversity Mapping project began in 2019 as a collaboration between our research team at Woods Hole Oceanographic Institution and international partners from Japan, Chile, and New Zealand. The project focuses on mapping biodiversity in deep-sea environments below 1000 meters, with particular emphasis on seamounts, hydrothermal vents, and abyssal plains.
+              </p>
+              <p class="mb-4">
+                Using a combination of remotely operated vehicles (ROVs), environmental DNA sampling, and traditional collection methods, we've documented over 200 species, including 15 that are new to science. Our findings have significant implications for understanding deep-sea ecosystem functioning and for designing effective marine protected areas in international waters.
+              </p>
+              <h4 class="text-xl font-bold mb-4">Key Findings</h4>
+              <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li>Discovery of previously unknown hydrothermal vent communities in the South Pacific</li>
+                <li>Documentation of unique adaptations in deep-sea organisms to extreme pressure and temperature conditions</li>
+                <li>Identification of biodiversity hotspots that warrant protection from deep-sea mining activities</li>
+                <li>Development of new methodologies for non-invasive biodiversity assessment using environmental DNA</li>
+              </ul>
+              <h4 class="text-xl font-bold mb-4">Project Gallery</h4>
+              <div class="grid grid-cols-3 gap-4 mb-4">
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+              </div>
+              <button class="text-accent font-medium hover:underline mt-2 project-close-btn">
+                Close Details <i class="fas fa-chevron-up ml-1"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card overflow-hidden" id="project-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="aspect-video bg-gray-200 rounded-lg shadow-md"></div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4">Coral Reef Resilience</h3>
+                <p class="mb-4">
+                  This project investigates factors that contribute to coral reef resilience in the face of climate change. By studying reefs that have survived bleaching events, we're identifying genetic, ecological, and environmental factors that enhance resilience.
+                </p>
+                <button class="text-accent font-medium hover:underline mt-2 text-left project-details-btn" data-project="project-2-details">
+                  View Project Details <i class="fas fa-chevron-right ml-1"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Project 2 Details (Hidden by default) -->
+            <div class="hidden mt-8 bg-white p-6 rounded-lg shadow-sm" id="project-2-details">
+              <h4 class="text-xl font-bold mb-4">Project Details</h4>
+              <p class="mb-4">
+                The Coral Reef Resilience project was initiated in 2020 in response to increasing coral bleaching events worldwide. Our research focuses on identifying coral populations that demonstrate unusual resilience to thermal stress and understanding the mechanisms behind this resilience.
+              </p>
+              <p class="mb-4">
+                Field sites include reefs in the Galápagos Islands, the Great Barrier Reef, and the Caribbean, allowing for comparative analysis across different ocean basins. We combine field observations with laboratory experiments and genomic analysis to develop a comprehensive understanding of resilience factors.
+              </p>
+              <h4 class="text-xl font-bold mb-4">Key Findings</h4>
+              <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li>Identification of specific coral genotypes with enhanced thermal tolerance</li>
+                <li>Documentation of symbiotic relationships with certain algal species that improve coral survival during heat stress</li>
+                <li>Evidence that local management actions, such as reducing pollution and fishing pressure, can significantly enhance reef resilience</li>
+                <li>Development of predictive models to identify reefs with high resilience potential for prioritized protection</li>
+              </ul>
+              <h4 class="text-xl font-bold mb-4">Project Gallery</h4>
+              <div class="grid grid-cols-3 gap-4 mb-4">
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+              </div>
+              <button class="text-accent font-medium hover:underline mt-2 project-close-btn">
+                Close Details <i class="fas fa-chevron-up ml-1"></i>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card overflow-hidden" id="project-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="aspect-video bg-gray-200 rounded-lg shadow-md"></div>
+              <div class="flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4">Marine Mammal Conservation</h3>
+                <p class="mb-4">
+                  This project focuses on tracking and studying endangered marine mammal populations to inform conservation efforts. Using non-invasive monitoring techniques, we're documenting migration patterns, habitat use, and population dynamics.
+                </p>
+                <button class="text-accent font-medium hover:underline mt-2 text-left project-details-btn" data-project="project-3-details">
+                  View Project Details <i class="fas fa-chevron-right ml-1"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Project 3 Details (Hidden by default) -->
+            <div class="hidden mt-8 bg-white p-6 rounded-lg shadow-sm" id="project-3-details">
+              <h4 class="text-xl font-bold mb-4">Project Details</h4>
+              <p class="mb-4">
+                The Marine Mammal Conservation project began in 2021 with a focus on endangered whale and dolphin species in the Eastern Pacific. Our research employs a combination of satellite tracking, acoustic monitoring, and photo identification to study these charismatic marine mammals without disturbing their natural behaviors.
+              </p>
+              <p class="mb-4">
+                A key innovation in this project is the development and deployment of minimally invasive tracking devices that can be attached to animals briefly during natural surfacing events. These devices provide unprecedented data on diving behavior, feeding patterns, and migration routes.
+              </p>
+              <h4 class="text-xl font-bold mb-4">Key Findings</h4>
+              <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li>Documentation of previously unknown migration corridors for blue whales between feeding and breeding grounds</li>
+                <li>Identification of critical habitat areas that overlap with shipping lanes, informing marine spatial planning</li>
+                <li>Evidence of changing distribution patterns in response to shifting prey availability due to climate change</li>
+                <li>Development of improved population estimates for several endangered cetacean species</li>
+              </ul>
+              <h4 class="text-xl font-bold mb-4">Project Gallery</h4>
+              <div class="grid grid-cols-3 gap-4 mb-4">
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+                <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
+              </div>
+              <button class="text-accent font-medium hover:underline mt-2 project-close-btn">
+                Close Details <i class="fas fa-chevron-up ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Methods -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Research Methods</h2>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Method 1 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-microscope text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Field Sampling</h3>
+                <p>Collection of biological specimens and environmental data using specialized equipment for deep-sea and shallow-water environments.</p>
+              </div>
+            </div>
+            
+            <!-- Method 2 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-dna text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Genomic Analysis</h3>
+                <p>DNA sequencing and bioinformatic analysis to study biodiversity, evolutionary relationships, and adaptive mechanisms.</p>
+              </div>
+            </div>
+            
+            <!-- Method 3 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-satellite text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Remote Sensing</h3>
+                <p>Use of satellite data and underwater sensors to monitor environmental conditions and track animal movements.</p>
+              </div>
+            </div>
+            
+            <!-- Method 4 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-robot text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">ROV Exploration</h3>
+                <p>Deployment of remotely operated vehicles to explore and document deep-sea environments that are inaccessible to human divers.</p>
+              </div>
+            </div>
+            
+            <!-- Method 5 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-chart-line text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Data Modeling</h3>
+                <p>Statistical analysis and predictive modeling to understand patterns and trends in marine ecosystems.</p>
+              </div>
+            </div>
+            
+            <!-- Method 6 -->
+            <div class="flex items-start">
+              <div class="mr-4 mt-1">
+                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                  <i class="fas fa-users text-white text-xl"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Community Science</h3>
+                <p>Engagement with local communities and citizen scientists to collect data and implement conservation initiatives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Research Collaborations</h2>
+        
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg text-center mb-12">
+            My research is strengthened through collaborations with leading institutions and researchers around the world. These partnerships enable interdisciplinary approaches and expand the impact of our work.
+          </p>
+          
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Placeholder for partner logos -->
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+            <div class="aspect-square bg-white p-4 rounded-lg shadow-sm flex items-center justify-center">
+              <div class="w-full h-12 bg-gray-200"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center text-gray-400 text-sm">
+        <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
+        <div class="mt-2">
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Terms of Use</a>
+          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="src/js/main.js"></script>
+</body>
+</html>
