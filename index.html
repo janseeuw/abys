@@ -21,211 +21,153 @@
   <!-- Header -->
   <header class="fixed w-full p-4 bg-white bg-opacity-90 backdrop-blur-sm z-40">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="index.html" class="text-lg font-bold">Ana Belén</a>
+      <a href="index.html" class="text-lg font-bold">Ana Belén Yánez Suárez</a>
       <button id="nav-toggle" class="md:hidden text-gray-800 text-xl">
         <i class="fas fa-bars"></i>
       </button>
       <nav id="nav-menu" class="hidden md:block">
         <ul class="md:flex space-y-4 md:space-y-0 md:space-x-6">
           <li><a href="index.html" class="text-accent font-medium">Home</a></li>
-          <li><a href="about.html" class="text-gray-800 hover:text-accent transition-colors">About</a></li>
           <li><a href="research.html" class="text-gray-800 hover:text-accent transition-colors">Research</a></li>
           <li><a href="publications.html" class="text-gray-800 hover:text-accent transition-colors">Publications</a></li>
-          <li><a href="expeditions.html" class="text-gray-800 hover:text-accent transition-colors">Expeditions</a></li>
           <li><a href="collaborations.html" class="text-gray-800 hover:text-accent transition-colors">Collaborations</a></li>
-          <li><a href="seminars.html" class="text-gray-800 hover:text-accent transition-colors">Seminars</a></li>
-          <li><a href="skills.html" class="text-gray-800 hover:text-accent transition-colors">Skills</a></li>
+          <li><a href="outreach.html" class="text-gray-800 hover:text-accent transition-colors">Outreach</a></li>
           <li><a href="contact.html" class="text-gray-800 hover:text-accent transition-colors">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="pt-10">
     <!-- Hero section -->
     <section id="hero" class="h-screen flex items-center justify-center relative overflow-hidden">
-      <!-- Background video (can be replaced with an image) -->
-      <div class="absolute inset-0 z-0">
-        <div class="bg-gray-900 h-full w-full opacity-50"></div>
-        <!-- Placeholder for video/image -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-70"></div>
+      <!-- Background image with slow zoom animation -->
+      <div class="absolute inset-0 z-0 overflow-hidden">
+        <img src="dist/images/image1.png" alt="Coral reef" class="w-full h-full object-cover animate-slowZoom">
       </div>
-      
+
       <div class="container text-center px-4 relative z-10">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-fadeInUp">Ana Belén Yánez Suárez</h1>
-        <p class="text-xl md:text-2xl text-white mb-8 animate-fadeInUp animate-delay-100">Marine Biologist & National Geographic Explorer</p>
-        <a href="#intro" class="btn animate-fadeInUp animate-delay-200">Discover My Work</a>
+        <p class="text-xl md:text-2xl text-white mb-8 animate-fadeInUp animate-delay-100">Marine Biologist</p>
+        <a href="#intro" class="btn animate-fadeInUp animate-delay-200">Discover</a>
       </div>
       
       <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-3xl text-white animate-bounce z-10">
         <i class="fas fa-chevron-down"></i>
       </div>
+      
+      <!-- Image credits -->
+      <div class="absolute bottom-2 right-4 text-xs text-white opacity-70 z-10">
+        Image: Schmidt Ocean Institute
+      </div>
     </section>
 
     <!-- Intro section -->
-    <section id="intro" class="section-padding bg-white">
+    <section id="intro" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-prose mx-auto text-center">
+		  <h2 class="text-3xl font-bold mb-12">About Me</h2>
+		  <div class="aspect-video bg-yellow-100 rounded-lg shadow-md mb-2 overflow-hidden">
+            <img src="dist/images/image6.jpg" alt="Yellow coral in the ocean" class="w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-500 text-right mb-8">Image credits: Misha Vallejo Prut</p>
           <p class="text-lg mb-8">
-            As a dedicated marine biologist and National Geographic Explorer, I focus on understanding and preserving marine ecosystems through innovative research and conservation efforts. My work spans from deep-sea exploration to coastal habitat restoration, with a particular emphasis on endangered marine species.
-          </p>
-          <a href="about.html" class="btn">Learn More</a>
+			I’m Ana Belén Yánez Suárez — a marine biologist, National Geographic Explorer, and PhD candidate at Memorial University of Newfoundland, and a former IMBRSea scholar. I study coral reef ecosystems across depths, from shallow tropical reefs in the Pacific and Caribbean to deep-sea coral communities thriving in low-oxygen waters.</p>
+          <p class="text-lg mb-8">
+			My fascination with corals deepened in the Galápagos, where I contributed to the first systematic characterization of deep-sea benthic fauna on unexplored seamounts. I later led coral restoration efforts and studied coral spawning in the Caribbean, followed by research on the combined effects of warming and eutrophication on Red Sea corals.</p>
+			<a href="https://education.nationalgeographic.org/resource/ana-belen-yanez-suarez/" class="btn" target="_blank">Learn More</a>
         </div>
       </div>
     </section>
 
     <!-- About/Gallery teaser -->
-    <section class="section-padding bg-gray-50">
+    <section class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="text-3xl font-bold mb-6">About Me</h2>
-            <p class="mb-4">
-              With over a decade of experience in marine biology research, I've dedicated my career to understanding and protecting our ocean ecosystems. My fieldwork has taken me from the coral reefs of the Pacific to the deep-sea trenches of the Atlantic.
-            </p>
-            <p class="mb-6">
-              Through my role as a National Geographic Explorer, I combine scientific research with storytelling to raise awareness about marine conservation issues and inspire the next generation of ocean advocates.
-            </p>
-            <a href="about.html" class="btn">Full Biography</a>
+            <h2 class="text-3xl font-bold mb-12">My Research</h2>
+			<p class="mb-8">
+				Concerned by the rapid deoxygenation of deep tropical waters  especially around the Galápagos and the Easter Tropical Pacific in general I am focusing on cold-water coral ecosystems. I lead the project <a class="text-accent font-bold" href="https://explorer-directory.nationalgeographic.org/ana-belen-yanez-suarez-1" target="_blank">Cold-Water Coral Distribution Across Oxygen Minimum Zones in the Galápagos and Costa Rica</a>, supported by a National Geographic Society grant. As part of this work, I led the discovery of a monospecific yellow coral garden thriving in anoxic conditions near Isla del Coco during a Falkor (too) expedition Schmidt Ocean Institute Expedition. This effort was carried out in collaboration with scientists from the University of Costa Rica and the Charles Darwin Research Station.</p>
+            <a href="research.html" class="btn">Learn More</a>
           </div>
           <div class="grid grid-cols-2 gap-4">
-            <!-- Placeholder for images -->
-            <div class="aspect-square bg-gray-200 shadow-md"></div>
-            <div class="aspect-square bg-gray-200 shadow-md"></div>
-            <div class="aspect-square bg-gray-200 shadow-md"></div>
-            <div class="aspect-square bg-gray-200 shadow-md"></div>
+            <!-- Gallery images -->
+            <div class="relative pb-[100%] shadow-md overflow-hidden rounded-lg">
+              <img src="dist/images/image2.png" alt="Research image 1" class="absolute inset-0 w-full h-full object-cover object-center">
+            </div>
+            <div class="relative pb-[100%] shadow-md overflow-hidden rounded-lg">
+              <img src="dist/images/image3.JPG" alt="Research image 2" class="absolute inset-0 w-full h-full object-cover object-center">
+            </div>
+            <div class="relative pb-[100%] shadow-md overflow-hidden rounded-lg">
+              <img src="dist/images/image4.JPG" alt="Research image 3" class="absolute inset-0 w-full h-full object-cover object-center">
+            </div>
+            <div class="relative pb-[100%] shadow-md overflow-hidden rounded-lg">
+              <img src="dist/images/image5.jpg" alt="Research image 4" class="absolute inset-0 w-full h-full object-cover object-center">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Research Projects -->
-    <section class="section-padding bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-12 text-center">Research Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project Card 1 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <div class="h-48 bg-gray-200"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Deep-Sea Biodiversity</h3>
-              <p class="text-gray-600 mb-4">Exploring the unknown ecosystems of the deep ocean and documenting new species.</p>
-              <a href="research.html" class="text-accent font-medium hover:underline">Read More</a>
-            </div>
-          </div>
-          
-          <!-- Project Card 2 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <div class="h-48 bg-gray-200"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Coral Reef Conservation</h3>
-              <p class="text-gray-600 mb-4">Developing innovative approaches to protect and restore endangered coral reef ecosystems.</p>
-              <a href="research.html" class="text-accent font-medium hover:underline">Read More</a>
-            </div>
-          </div>
-          
-          <!-- Project Card 3 -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-            <div class="h-48 bg-gray-200"></div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Marine Mammal Studies</h3>
-              <p class="text-gray-600 mb-4">Tracking and studying the behavior of endangered marine mammals in their natural habitats.</p>
-              <a href="research.html" class="text-accent font-medium hover:underline">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-12">
-          <a href="research.html" class="btn">View All Projects</a>
-        </div>
-      </div>
-    </section>
+	<!-- Quote Section -->
+	<section class="py-24 bg-gray-900 text-white relative">
+		<div class="absolute inset-0 bg-gray-900 opacity-70 z-0"></div>
+		<!-- Background image would go here -->
+		<div class="container mx-auto px-4 relative z-10">
+			<div class="max-w-3xl mx-auto text-center">
+			<blockquote class="text-2xl md:text-3xl font-light italic mb-8">
+				Coral reefs are the quiet architects of life in the sea, sheltering, sustaining, and connecting worlds. To protect them is to honor the balance that sustains us all.
+			</blockquote>
+			</div>
+		</div>
+	</section>
 
-    <!-- Publications Teaser -->
-    <section class="section-padding bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-12 text-center">Recent Publications</h2>
-        <div class="max-w-3xl mx-auto space-y-8">
-          <!-- Publication 1 -->
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
-            <div>
-              <h3 class="font-bold text-lg">Biodiversity patterns in deep-sea ecosystems</h3>
-              <p class="text-gray-600">Journal of Marine Biology, 2024</p>
-            </div>
-            <a href="publications.html" class="text-accent font-medium hover:underline mt-2 md:mt-0">Read Abstract</a>
-          </div>
-          
-          <!-- Publication 2 -->
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
-            <div>
-              <h3 class="font-bold text-lg">Conservation strategies for endangered marine species</h3>
-              <p class="text-gray-600">Conservation Biology, 2023</p>
-            </div>
-            <a href="publications.html" class="text-accent font-medium hover:underline mt-2 md:mt-0">Read Abstract</a>
-          </div>
-          
-          <!-- Publication 3 -->
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white rounded-lg shadow-sm">
-            <div>
-              <h3 class="font-bold text-lg">Climate change impacts on coral reef ecosystems</h3>
-              <p class="text-gray-600">Nature Climate Change, 2023</p>
-            </div>
-            <a href="publications.html" class="text-accent font-medium hover:underline mt-2 md:mt-0">Read Abstract</a>
-          </div>
-        </div>
-        <div class="text-center mt-12">
-          <a href="publications.html" class="btn">View All Publications</a>
-        </div>
-      </div>
-    </section>
+    <!-- Education & Experience -->
+    <section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+		  <h2 class="text-3xl font-bold mb-12 text-center">Education</h2>
+		  
+		  <div class="max-w-3xl mx-auto">
+			<!-- Education Column -->
+			<div>
+			  <div class="mb-12">
+				<h4 class="text-xl font-bold">PhD. candidate</h4>
+				<p class="text-gray-600 mb-1">Marine Institute of Memorial University of Newfoundland of Canada</p>
+				<p class="text-gray-600 italic mb-1">Thesis: Dynamics of deep-sea cold-water coral reefs</p>
+			  </div>
+			  
+			  <div class="mb-12">
+				<h4 class="text-xl font-bold">MSc. International Master of Science in Marine Biological Resources (IMBRSea) <a href="https://www.imbrsea.eu/partner-list" class="text-accent hover:underline" target="_blank">link</a></h4>
+				<p class="text-gray-600 mb-1">Mention on marine ecology and conservation.</p>
+				<p class="text-gray-600 mb-1"><span class="font-medium">Honors: Magna cum laude.</span></p>
+				<p class="text-gray-600 mb-1">
+					<span class="font-medium">University of Gent (UGent)</span>, Ghent, Belgium. <a href="https://www.ugent.be/we/biology/en/research/marbiol" class="text-accent hover:underline" target="_blank">link</a>
+				</p>
+				<p class="text-gray-600 mb-1">
+					<span class="font-medium">Sorbonne University</span>: <a href="https://www.sorbonne-universite.fr/en/news/inauguration-experimental-platform-banyuls-oceanological-observatory" class="text-accent hover:underline" target="_blank">Biological Marine Station in Roscoff</a>, and Oceanographic Observatory of Banyuls-sur-Mer, France. <a href="https://www.sorbonne-universite.fr/en" class="text-accent hover:underline" target="_blank">link</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
 
-    <!-- Expeditions Teaser -->
-    <section class="section-padding bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-12 text-center">Featured Expeditions</h2>
-        <div class="max-w-4xl mx-auto">
-          <!-- Video placeholder -->
-          <div class="aspect-video bg-gray-200 mb-8 rounded-lg shadow-md"></div>
-          <h3 class="text-2xl font-bold mb-4">Exploring the Mariana Trench</h3>
-          <p class="mb-6">
-            Join me on an extraordinary journey to the deepest part of our oceans, where we discovered new species and gained insights into one of Earth's most extreme environments.
-          </p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <!-- Expedition thumbnails -->
-            <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
-            <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
-            <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
-            <div class="aspect-video bg-gray-200 rounded shadow-sm"></div>
-          </div>
-          <div class="text-center">
-            <a href="expeditions.html" class="btn">View All Expeditions</a>
-          </div>
-        </div>
-      </div>
-    </section>
+		  <div class="text-center mt-8">
+		    <a href="https://www.linkedin.com/in/ana-belen-yanez" class="text-accent hover:text-accent-dark transition-colors" target="_blank" rel="noopener">
+		      <i class="fab fa-linkedin text-3xl"></i>
+		    </a>
+		  </div>
+		</div>
+	  </section>
+
 
     <!-- Contact Teaser -->
-    <section class="section-padding bg-gray-50">
+    <section class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-4">
         <div class="max-w-md mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+          <h2 class="text-3xl font-bold mb-12">Get In Touch</h2>
           <p class="mb-8">
             Interested in collaborations, speaking engagements, or have questions about my research? I'd love to hear from you.
           </p>
           <a href="contact.html" class="btn">Contact Me</a>
-          <div class="mt-8 flex justify-center space-x-6">
-            <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-              <i class="fab fa-twitter text-2xl"></i>
-            </a>
-            <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-              <i class="fab fa-instagram text-2xl"></i>
-            </a>
-            <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-              <i class="fab fa-linkedin text-2xl"></i>
-            </a>
-            <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-              <i class="fas fa-envelope text-2xl"></i>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -233,12 +175,20 @@
 
   <footer class="py-8 bg-white border-t border-gray-100">
     <div class="container mx-auto px-4">
-      <div class="text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
-        <div class="mt-2">
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Terms of Use</a>
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Site Map</a>
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-gray-400 text-sm mb-4 md:mb-0">
+          <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://x.com/belenocean" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="https://www.instagram.com/anabelenys/" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ana-belen-yanez" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
         </div>
       </div>
     </div>

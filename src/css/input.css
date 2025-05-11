@@ -3,62 +3,97 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
+/**
+ * Theme Variables
+ * Centralized color and style variables
+ */
 :root {
   --color-accent: #00A3A3;
+  --color-accent-dark: #007373;
   --color-charcoal: #333333;
+  --transition-standard: all 0.3s ease;
+  --border-radius-standard: 0.25rem;
 }
 
-/* Global styles */
-html {
-  scroll-behavior: smooth;
+/**
+ * Base Styles
+ * Global element styling
+ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--color-charcoal);
+    line-height: 1.75;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
+  }
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  color: var(--color-charcoal);
-  line-height: 1.75;
+/**
+ * Components
+ * Reusable UI components
+ */
+@layer components {
+  /* Button component */
+  .btn {
+    @apply inline-block font-medium rounded;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: var(--border-radius-standard);
+    transition: var(--transition-standard);
+  }
+
+  .btn:hover {
+    background-color: var(--color-charcoal);
+    transform: scale(1.05);
+  }
+
+  /* Progress bar component */
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--color-accent);
+    z-index: 50;
+    width: 0%;
+    transition: width 0.2s ease;
+  }
+  
+  /* Section spacing utility */
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  line-height: 1.2;
+/**
+ * Utilities
+ * Single-purpose utility classes
+ */
+@layer utilities {
+  /* Color utilities */
+  .text-accent {
+    color: var(--color-accent) !important;
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent) !important;
+  }
 }
 
-/* Custom components */
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--color-accent);
-  color: white;
-  font-weight: 500;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: var(--color-charcoal);
-  transform: scale(1.05);
-}
-
-.section-padding {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-/* Progress bar */
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background-color: var(--color-accent);
-  z-index: 50;
-  width: 0%;
-  transition: width 0.2s ease;
-}
-
-/* Animations */
+/**
+ * Animations
+ * Keyframes and animation utilities
+ */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -67,6 +102,15 @@ h1, h2, h3, h4, h5, h6 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 
@@ -84,4 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-delay-300 {
   animation-delay: 0.3s;
+}
+
+.animate-slowZoom {
+  animation: slowZoom 10s ease-in-out infinite alternate;
+  transform-origin: center center;
 }

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'accent': '#00A3A3', // Teal accent color
+		'accent-dark': '#007373', // Darker teal accent color
         'charcoal': '#333333', // Deep charcoal for text
       },
       fontFamily: {

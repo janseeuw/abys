@@ -21,147 +21,58 @@
   <!-- Header -->
   <header class="fixed w-full p-4 bg-white bg-opacity-90 backdrop-blur-sm z-40">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="index.html" class="text-lg font-bold">Ana Belén</a>
+      <a href="index.html" class="text-lg font-bold">Ana Belén Yánez Suárez</a>
       <button id="nav-toggle" class="md:hidden text-gray-800 text-xl">
         <i class="fas fa-bars"></i>
       </button>
       <nav id="nav-menu" class="hidden md:block">
         <ul class="md:flex space-y-4 md:space-y-0 md:space-x-6">
           <li><a href="index.html" class="text-gray-800 hover:text-accent transition-colors">Home</a></li>
-          <li><a href="about.html" class="text-gray-800 hover:text-accent transition-colors">About</a></li>
           <li><a href="research.html" class="text-gray-800 hover:text-accent transition-colors">Research</a></li>
           <li><a href="publications.html" class="text-gray-800 hover:text-accent transition-colors">Publications</a></li>
-          <li><a href="expeditions.html" class="text-gray-800 hover:text-accent transition-colors">Expeditions</a></li>
           <li><a href="collaborations.html" class="text-gray-800 hover:text-accent transition-colors">Collaborations</a></li>
-          <li><a href="seminars.html" class="text-gray-800 hover:text-accent transition-colors">Seminars</a></li>
-          <li><a href="skills.html" class="text-gray-800 hover:text-accent transition-colors">Skills</a></li>
+          <li><a href="outreach.html" class="text-gray-800 hover:text-accent transition-colors">Outreach</a></li>
           <li><a href="contact.html" class="text-accent font-medium">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="pt-20">
+  <main class="pt-10">
     <!-- Contact Hero -->
     <section class="py-16 md:py-24 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="max-w-prose mx-auto text-center">
+        <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-8">Get In Touch</h1>
           <p class="text-lg mb-6">
-            Interested in collaborations, speaking engagements, or have questions about my research? I'd love to hear from you. Please use the form below or reach out through social media.
+            Interested in collaborations, speaking engagements, or have questions about my research? I'd love to hear from you. Connect with me on social media to stay updated on my latest work and research.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="py-16 md:py-24 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-xl mx-auto">
-          <form id="contact-form" class="space-y-6">
-            <div class="relative">
-              <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent peer" placeholder=" " required>
-              <label for="name" class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-2 peer-focus:text-accent">Your Name</label>
-            </div>
-            
-            <div class="relative">
-              <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent peer" placeholder=" " required>
-              <label for="email" class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-2 peer-focus:text-accent">Your Email</label>
-            </div>
-            
-            <div class="relative">
-              <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent peer" placeholder=" " required></textarea>
-              <label for="message" class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-6 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-2 peer-focus:text-accent">Your Message</label>
-            </div>
-            
-            <div>
-              <button type="submit" class="btn w-full">Send Message</button>
-            </div>
-          </form>
-          
-          <div id="form-success" class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-md">
-            Thank you for your message! I'll get back to you as soon as possible.
-          </div>
-          
-          <div id="form-error" class="hidden mt-6 p-4 bg-red-50 text-red-700 rounded-md">
-            There was an error sending your message. Please try again later or contact me directly via email.
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Information -->
-    <section class="py-16 md:py-24 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-12 text-center">Other Ways to Connect</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Email -->
-            <div class="text-center">
-              <div class="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
-                <i class="fas fa-envelope text-white text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-2">Email</h3>
-              <p class="mb-2">For research inquiries:</p>
-              <a href="mailto:research@anabelenyanez.com" class="text-accent hover:underline">research@anabelenyanez.com</a>
-              <p class="mt-2 mb-2">For speaking engagements:</p>
-              <a href="mailto:speaking@anabelenyanez.com" class="text-accent hover:underline">speaking@anabelenyanez.com</a>
-            </div>
-            
-            <!-- Social Media -->
-            <div class="text-center">
-              <div class="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
-                <i class="fas fa-share-alt text-white text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-2">Social Media</h3>
-              <div class="flex justify-center space-x-4 mb-4">
-                <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-                  <i class="fab fa-twitter text-2xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-                  <i class="fab fa-instagram text-2xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-                  <i class="fab fa-linkedin text-2xl"></i>
-                </a>
-                <a href="#" class="text-gray-600 hover:text-accent transition-colors">
-                  <i class="fab fa-researchgate text-2xl"></i>
-                </a>
-              </div>
-              <p>Follow me for updates on research, expeditions, and conservation efforts.</p>
-            </div>
-            
-            <!-- Institution -->
-            <div class="text-center">
-              <div class="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center mb-4">
-                <i class="fas fa-building text-white text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-bold mb-2">Institution</h3>
-              <p class="mb-2">Woods Hole Oceanographic Institution</p>
-              <p class="mb-2">266 Woods Hole Road</p>
-              <p class="mb-2">Woods Hole, MA 02543</p>
-              <p>United States</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Media Inquiries -->
     <section class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-6">Media Inquiries</h2>
-          <p class="text-lg mb-8">
-            For media inquiries, interviews, or documentary collaborations, please contact my media representative:
-          </p>
-          <div class="p-6 bg-gray-50 rounded-lg inline-block">
-            <h3 class="font-bold text-xl mb-2">Media Relations</h3>
-            <p class="mb-2">Sarah Johnson</p>
-            <p class="mb-2">National Geographic Society</p>
-            <a href="mailto:media@natgeo.org" class="text-accent hover:underline">media@natgeo.org</a>
-            <p class="mt-2">+1 (202) 555-0123</p>
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-12 text-center">Connect With Me</h2>
+          
+          <div class="max-w-xl mx-auto text-center">
+            <!-- Social Media -->
+            <div class="text-center">
+              <div class="flex justify-center space-x-8 mb-6">
+                <a href="https://x.com/belenocean" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+                  <i class="fab fa-twitter text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/anabelenys/" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+                  <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ana-belen-yanez" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+              </div>
+              <p class="text-lg">Follow me for updates on my research, expeditions, and conservation efforts. I regularly share insights from my work with coral reef ecosystems and deep-sea explorations.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -170,12 +81,20 @@
 
   <footer class="py-8 bg-white border-t border-gray-100">
     <div class="container mx-auto px-4">
-      <div class="text-center text-gray-400 text-sm">
-        <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
-        <div class="mt-2">
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Terms of Use</a>
-          <a href="#" class="text-gray-400 hover:text-accent mx-2 transition-colors">Site Map</a>
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-gray-400 text-sm mb-4 md:mb-0">
+          <p>&copy; 2025 Ana Belén Yánez Suárez. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://x.com/belenocean" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="https://www.instagram.com/anabelenys/" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ana-belen-yanez" class="text-gray-600 hover:text-accent transition-colors" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -183,27 +102,6 @@
 
   <!-- JavaScript -->
   <script src="src/js/main.js"></script>
-  <script>
-    // Contact form handling
-    document.addEventListener('DOMContentLoaded', function() {
-      const contactForm = document.getElementById('contact-form');
-      const formSuccess = document.getElementById('form-success');
-      const formError = document.getElementById('form-error');
-      
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          // In a real implementation, you would send the form data to a server
-          // For this demo, we'll just show the success message
-          contactForm.classList.add('hidden');
-          formSuccess.classList.remove('hidden');
-          
-          // Reset form
-          contactForm.reset();
-        });
-      }
-    });
-  </script>
+  <!-- No additional scripts needed -->
 </body>
 </html>
