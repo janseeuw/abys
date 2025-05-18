@@ -13,6 +13,7 @@ const App = {
       this.ScrollEffects.initAnimations();
       this.Projects.init();
       this.SmoothScroll.init();
+      this.CollapsibleSections.init();
     });
   },
 
@@ -151,6 +152,43 @@ const App = {
               behavior: 'smooth',
               block: 'start'
             });
+          }
+        });
+      });
+    }
+  },
+
+  // Collapsible sections functionality
+  CollapsibleSections: {
+    init() {
+      const collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+      
+      if (collapsibleHeaders.length === 0) return;
+      
+      collapsibleHeaders.forEach(header => {
+        // Set initial state - first section open, others closed
+        const content = header.nextElementSibling;
+        const isFirstSection = header.parentElement.querySelector('.collapsible-header') === header;
+        
+        if (!isFirstSection) {
+          content.classList.add('hidden');
+        }
+        
+        // Add click event listener
+        header.addEventListener('click', function() {
+          // Toggle content visibility
+          content.classList.toggle('hidden');
+          
+          // Toggle icon
+          const icon = this.querySelector('.collapsible-icon');
+          if (icon) {
+            if (content.classList.contains('hidden')) {
+              icon.classList.remove('fa-chevron-down');
+              icon.classList.add('fa-chevron-right');
+            } else {
+              icon.classList.remove('fa-chevron-right');
+              icon.classList.add('fa-chevron-down');
+            }
           }
         });
       });
